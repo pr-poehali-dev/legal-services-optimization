@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const services = [
@@ -68,11 +69,10 @@ const Index = () => {
               <span className="text-xl font-bold text-slate-800">ЮрСервис НСК</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-slate-600 hover:text-primary transition-colors">Услуги</a>
+              <Link to="/services" className="text-slate-600 hover:text-primary transition-colors">Услуги</Link>
+              <Link to="/about" className="text-slate-600 hover:text-primary transition-colors">О компании</Link>
+              <Link to="/contacts" className="text-slate-600 hover:text-primary transition-colors">Контакты</Link>
               <a href="#consultation" className="text-slate-600 hover:text-primary transition-colors">Консультация</a>
-              <a href="#pricing" className="text-slate-600 hover:text-primary transition-colors">Цены</a>
-              <a href="#about" className="text-slate-600 hover:text-primary transition-colors">О компании</a>
-              <a href="#contacts" className="text-slate-600 hover:text-primary transition-colors">Контакты</a>
               <Button size="sm">
                 <Icon name="Phone" size={16} className="mr-2" />
                 +7-999-452-35-00
